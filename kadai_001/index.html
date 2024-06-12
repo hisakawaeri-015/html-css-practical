@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="朝比奈一樹のProfileサイトです" />
+  <title>朝比奈一樹MyProfile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>
+        <a href="index.html" class="home">My Profile</a>
+      </h1>
+      
+      <!-- ナビゲーションメニュー -->
+      <nav>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <!-- 記事 -->
+    <article>
+      <!-- メインビジュアル -->
+      <section>
+        <img src="images/main.png" alt="カメラの画像" class="mainpic">
+      </section>
+      <!-- About -->
+      <section class="about">
+        <h2 id="about">About</h2>
+      <!-- 説明文 -->
+        <div class="about-flex">
+          <img src="images/about.png" alt="人物" class="circle">
+          <div>
+            <h3 class="about-name">Kazuki Asahina</h3>
+            <p>25歳 長野県佐久市出身</p>
+            <p>ソフトウェア業界でマーケティングに従事</p>
+            <p>趣味はカメラ、愛機はCanon</p>
+            <p>自然を撮影するのが好きで、海や山によく行く</p>
+          </div>
+        </div>
+      </section>
+      <!-- Works -->
+      <section id="works">
+        <h2 class="index-h2">Works</h2>
+        <div class="works-flex">
+          <div class="works-item">
+            <img class="works-photo" src="images/works1.png" alt="日本海">
+            <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した１枚</p>
+          </div>
+          <div class="works-item">
+            <img class="works-photo" src="images/works2.png" alt="長野">
+            <p>地元長野の木曽町から撮影した、冠雪した御獄山</p>
+            </div>
+          <div class="works-item">
+            <img class="works-photo" src="images/works3.png" alt="京都">
+            <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <!-- コピーライト -->
+    <p>&copy; MyProfile. All rights reserved.</p>
+  </footer>
+</body>
+</html>
