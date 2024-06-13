@@ -6,10 +6,15 @@ PC、スマホ共通スタイル
 }
 
 body {
-  margin: 0 auto 0px auto;
+  margin: 0;
+  padding: 0px;
   font-family: "Noto Sans JP";
   font-size: 18px;
-  background-color: #ffffff;
+  background-color: pink;
+}
+
+p {
+  margin: 0;
 }
 
 /* ヘッダー */
@@ -20,9 +25,11 @@ body {
   align-items: center;
   margin: 20px auto;
   max-width: 960px;
+  /* 960まで？ */
 }
 
 .header-inner a {
+  /* 文字の装飾 */
   color: black;
   font-weight: bold;
   text-decoration: none;
@@ -30,6 +37,7 @@ body {
 
 /* MyProfile左上の部分 */
 h1 {
+  /* 位置 */
   margin: 0 0 0 20px;
   font-size: 34px;
   border: 1px solid black;
@@ -39,6 +47,7 @@ h1 {
 .home {
   text-decoration: none;
 }
+/* なぜ３つに分ける？ */
 
 /* ナビゲーションメニュー */
 nav .menu {
@@ -55,6 +64,7 @@ nav a {
   font-size: 34px;
 }
 
+/* なぜここにh2? */
 h2 {
   margin: 0;
   padding: 60px 0 40px;
@@ -62,76 +72,67 @@ h2 {
   font-size: 34px;
 }
 
+/* ↓なぜbodyで設定してるのに何度も書くの？ */
 p,
 li {
   font-size: 18px;
 }
 
-/* メインビジュアル */
+/* メインビジュアル画像 */
 img {
   margin: 0 auto;
   width: 100%;
 }
 
 /* Aboutセクション */
-.about {
-  margin: 10px auto 0 auto;
-  width: 820px;
-  height: 402px;
-}
 
-.about-flex {
+.about-inner {
+  padding: 10px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
 }
 
 /* 丸く切り取る画像 */
 .circle {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 280px;
   height: 280px;
 }
 
-.about-name {
-  margin: 60px 0 20px 120px;
+.name {
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
 }
 
-.about-flex > div > p {
-  margin-left: 130px;
-  font-size: 18px;
-  margin-top: 0px;
-  margin-bottom:0px;
+/* プロフィールの説明部分 */
+.content {
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.about-flex > div > p::before {
-  content: "・";
-}
 
-/* works */
+/* Works */
 
-#works {
-  width: 752px;
-  height: 355.42px;
-  margin: 80px auto 100px auto;
-}
-
-.works-flex {
+.works-innner {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
-.works-item {
-  flex: 1;
+/* Worksの画像と説明部分 */
+.item {
+  margin: 0 10px;
+  padding-bottom: 60px;
+  width: 25%;
 }
 
-.works-photo {
-  width: 90%;
-  margin: 10px;
-}
-
-.works-item > p {
-  margin: -10px 10px 0 10px;
-}
+/* フッター */
 
 footer > p {
   text-align: center;
@@ -143,7 +144,7 @@ footer > p {
   h1 {
     font-size: 28px;
   }
-  
+
   h2 {
     padding: 30px 0 20px;
     font-size: 28px;
@@ -162,4 +163,5 @@ footer > p {
     text-align: center;
     padding-bottom: 40px;
   }
+
 }
